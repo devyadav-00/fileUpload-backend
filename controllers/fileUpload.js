@@ -73,8 +73,8 @@ exports.imageUpload = async (req, res) => {
         }
 
         //file format supported hai
-        console.log("Uploading to Codehelp");
-        const response = await uploadFileToCloudinary(file, "Codehelp");
+        console.log("Uploading to devFolder");
+        const response = await uploadFileToCloudinary(file, "devFolder");
         console.log(response);
 
         //db me entry save krni h
@@ -125,8 +125,8 @@ exports.videoUpload = async (req,res) => {
          }
 
           //file format supported hai
-        console.log("Uploading to Codehelp");
-        const response = await uploadFileToCloudinary(file, "Codehelp");
+        console.log("Uploading to devFolder");
+        const response = await uploadFileToCloudinary(file, "devFolder");
         console.log(response);
 
         //db me entry save krni h
@@ -178,9 +178,9 @@ exports.imageSizeReducer = async (req,res) => {
         }
 
         //file format supported hai
-        console.log("Uploading to Codehelp");
+        console.log("Uploading to devFolder");
         //TODO: height attribute-> COMPRESS
-        const response = await uploadFileToCloudinary(file, "Codehelp", 90);
+        const response = await uploadFileToCloudinary(file, "devFolder", 90);
         console.log(response);
 
         //db me entry save krni h
